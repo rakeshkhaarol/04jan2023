@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>js  for in and for of loop</title>
+    </head>
+    <body>
+        <script>
+            //i can write the js code cloging the body tag 
+            let students ={//object
+                //1. propertis:value/key:value
+                name:'sajay',
+                surname:"jain",
+                address:`neemuch`,
+                mobileNo:3244553453,
+                pincode:458441,
+                friends:['rahul',"rohit",`harish`,"navin"]
+
+                //2. method
+            };
+
+            /*
+            for (key in object) {
+                // code block to be executed
+            }
+            */
+           for (let student in students){
+            console.log (students[student])
+           };
+
+        </script>
+    </body>
+</html>
