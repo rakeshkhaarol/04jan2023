@@ -7,8 +7,12 @@
         <title>js  for in and for of loop</title>
     </head>
     <body>
+        <ol class="myol">
+           
+        </ol>
         <script>
-            //i can write the js code cloging the body tag 
+            //i can write the js code cloging the body tag
+            var myoll = document.querySelector(".myol") 
             let students ={//object
                 //1. propertis:value/key:value
                 name:'sajay',
@@ -16,6 +20,7 @@
                 address:`neemuch`,
                 mobileNo:3244553453,
                 pincode:458441,
+                class:"BCA",
                 friends:['rahul',"rohit",`harish`,"navin"]
 
                 //2. method
@@ -26,10 +31,45 @@
                 // code block to be executed
             }
             */
+            /*
+                How many ways to access the js object Value?
+                1.objectName.property   . = member selection operator
+                2.objectName["property"] 
+                3.objectName[expression]
+            */
            for (let student in students){
-            console.log (students[student])
+            //console.log (students[student])
+            //myoll.innerHTML=students[`${student}`]
+            document.write(`<ul><li>${students[student]}</li></ul>`)
            };
 
+        </script>
+        <script>
+            //i can write the js code cloging the body tag
+            let newses =[// [] is an Array
+                
+                "SC",
+                "quashes",
+                'Uttarakhand',
+                'HC ',
+                `order`,
+                `on`,
+                'CBI',
+                'probe',
+                "against",
+                "ex-CM",
+                "Trivendra Rawat"
+            ];
+
+            /*
+            for (variable of iterable) {
+                // code block to be executed
+            }
+            */
+           for (news of newses){
+            //console.log(news)
+            myoll.innerHTML=myoll.innerHTML+`<li>${news}</li>`
+           }
         </script>
     </body>
 </html>
